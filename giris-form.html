@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Giriş Formu</title>
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif ;
+            font-size: small;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #18005f;
+        
+        }
+
+        
+        .itemArea{
+            width: 25%;
+        }
+
+        form{
+            background-color: #ffffff;
+        }
+        
+        input[type="text"], input[type="password"]{
+            width: 100%;
+            padding: 10px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #cccccc;
+            box-sizing: border-box;
+        }
+        button{
+            background-color: #00ac17c4;
+            color: rgb(226, 237, 0);
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        @media screen and (max-width:300px){
+            span.password {
+                display: block;
+                float: none;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div class="itemArea">
+        <h2 style="color: rgb(226, 237, 0);" >  Giriş Formu:</h2>
+        
+        <input type="text" placeholder="Kullanıcı Adı Giriniz" name="name" required> <br>
+
+        
+        <input type="password" name="password" placeholder="Şifre Giriniz" name="password" required> <br>
+        
+        <button type="submit">Giriş</button><br>
+            
+        <form>
+            <input type="checkbox" checked="checked" name="remember"> Oturum açık kalsın <br>
+    
+            <span class="password">Şifremi unuttum</span>
+        </form>
+    </div>
+</body>
+</html>
